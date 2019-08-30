@@ -39,4 +39,5 @@ RUN set -x \
 		   gcc				\
 		   git				\
 		   ninja-build			\
-		   v4l-utils
+		   v4l-utils			\
+		   strace
