@@ -5,6 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN set -x \
   && apt-get update \
   && apt-get install -y --no-install-recommends \
+                   exuberant-ctags              \
+		   cscope                       \
 		   dh-autoreconf		\
 		   autotools-dev		\
 		   doxygen      		\
@@ -40,4 +42,6 @@ RUN set -x \
 		   git				\
 		   ninja-build			\
 		   v4l-utils			\
-		   strace
+		   strace                       \
+  && rm -rf /var/lib/apt/lists/*          \
+  && pip3 install --user git-pw
