@@ -7,6 +7,7 @@ RUN set -x \
   && apt-get install -y --no-install-recommends \
                    exuberant-ctags              \
 		   cscope                       \
+		   strace                       \
 		   dh-autoreconf		\
 		   autotools-dev		\
 		   doxygen      		\
